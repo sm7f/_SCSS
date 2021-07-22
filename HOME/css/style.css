@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* /////////////////////////////NAVIGATION///////////////////////////////////*/
+header {
+  height: 100px;
+  border-radius: 0px;
+  background: linear-gradient(225deg, #ffffff, #dadada);
+  -webkit-box-shadow: -24px 24px 48px #f0f0f0, 24px -24px 48px #f4f4f4;
+          box-shadow: -24px 24px 48px #f0f0f0, 24px -24px 48px #f4f4f4;
+}
+
+li {
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 20px;
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  left: 23em;
+  bottom: 5.2rem;
+}
+
+a {
+  z-index: 1;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 34px;
+  color: #513A50;
+  text-decoration: none;
+  border: solid 1px #000000;
+  -webkit-box-shadow: 5px 5px 0  -5px #837765;
+          box-shadow: 5px 5px 0  -5px #837765;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a:before {
+  display: inline-block;
+  -webkit-transition: bottom, 0.35s;
+  transition: bottom, 0.35s;
+  position: absolute;
+  -webkit-transform: skew(-50deg);
+          transform: skew(-50deg);
+  top: 0px;
+  left: 260px;
+  background-color: #ff7a7a;
+  content: "　";
+  width: 220px;
+  height: 120px;
+  z-index: -1;
+}
+
+a:hover {
+  -webkit-box-shadow: 0px 0px 0  0px #ffCA7A;
+          box-shadow: 0px 0px 0  0px #ffCA7A;
+}
+
+a:hover:before {
+  top: -40px;
+  left: -40px;
+}
+
+.autenticacao {
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  float: right;
+  display: inline;
+  position: relative;
+  bottom: 9rem;
+  -webkit-padding-end: 10px;
+          padding-inline-end: 10px;
+}
+
+img {
+  margin-top: 10px;
+}
+
+/* /////////////////////////////INMAGE///////////////////////////////////*/
+.bg1 {
+  font-family: var(--body-font);
+  background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  bottom: 140px;
+}
+
+@media screen and (max-width: 480px) {
+  .bg1 {
+    padding: 0.8em;
+  }
+}
+
+.bg2 {
+  font-family: var(--body-font);
+  background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .bg2 {
+    padding: 0.8em;
+  }
+}
+
+/* /////////////////////////////LOGIN1///////////////////////////////////*/
+.form-container {
+  position: absolute;
+  right: 200px;
+  top: 15%;
+  width: 400px;
+  height: 50%;
+  border-radius: 60px;
+  background: #f4f1f1;
+}
+
+.form-container .form-container form {
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.form-container .form-container form p {
+  font-size: 14px;
+  color: #525252;
+}
+
+/* /////////////////////////////LOGIN2///////////////////////////////////*/
+.form-wraper {
+  margin-top: 50px;
+  background-color: transparent;
+  color: #000000;
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.form-container form input[type=text] {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+  margin-top: 20px;
+  background-color: #033C50;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  height: 3rem;
+  cursor: pointer;
+  border: 0;
+}
+
+/* /////////////////////////////Footer///////////////////////////////////*/
+footer {
+  margin-top: 20px;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+footer footer {
+  background: rgba(27, 43, 105, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 70px 0 50px 0;
+}
+/*# sourceMappingURL=style.css.map */
