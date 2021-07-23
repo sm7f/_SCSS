@@ -172,35 +172,21 @@ a:hover:before {
 }
 
 /* /////////////////////////////LOGIN1///////////////////////////////////*/
-.form-container {
-  position: absolute;
-  right: 200px;
-  top: 15%;
-  width: 400px;
-  height: 50%;
+.form-container form {
+  position: relative;
+  top: 80px;
+  right: 80px;
+  float: right;
+  width: 20%;
+  padding: 10px 10px;
   border-radius: 60px;
   background: #f4f1f1;
 }
 
-.form-container .form-container form {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.form-container .form-container form p {
-  font-size: 10px;
-  color: #525252;
-}
-
-/* /////////////////////////////LOGIN2///////////////////////////////////*/
-.form-wraper {
-  margin-top: 10px;
-  background-color: transparent;
-  color: #000000;
-  padding: 10px 30px 40px;
-  font-size: 13px;
-  cursor: pointer;
-  border-radius: 20px;
+.form-container form p input {
+  position: relative;
+  left: 77%;
+  margin: 0;
 }
 
 .form-container form input[type=text] {
@@ -224,6 +210,21 @@ a:hover:before {
   line-height: 40px;
   background-color: #033C50;
   border-radius: 10px;
+}
+
+.form-container p {
+  margin: 5px;
+}
+
+/* /////////////////////////////LOGIN2///////////////////////////////////*/
+.form-wraper {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #000000;
+  padding: 10px 30px 40px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 /* /////////////////////////////Footer///////////////////////////////////*/

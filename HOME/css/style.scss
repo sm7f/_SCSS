@@ -41,17 +41,6 @@ body {
 .logo img{
   height: 100%;
 }
-.menu-togle{
-  float: right;
-  color:white;
-  background-color: #555;
-  border: solid 1px #777;
-  border-radius: 5px;
-  height: 40px;
-  padding: 10px 20px;
-  margin: 20px 15px;
-}
- 
 .menu{
   display: inline-block;
   vertical-align: top;
@@ -131,7 +120,23 @@ a:hover:before {
     display: none;
   }
 }
+ .cabecalho{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .menu{
+     flex-grow: 10;
+ }
 
+ .menu ul{
+     display: flex;
+ }
+
+ .menu li {
+     margin: 0px 10px;
+ }
+ 
 
 /* /////////////////////////////INMAGE///////////////////////////////////*/
 .bg2 {

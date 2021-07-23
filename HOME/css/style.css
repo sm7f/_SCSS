@@ -44,17 +44,6 @@ body {
   height: 100%;
 }
 
-.menu-togle {
-  float: right;
-  color: white;
-  background-color: #555;
-  border: solid 1px #777;
-  border-radius: 5px;
-  height: 40px;
-  padding: 10px 20px;
-  margin: 20px 15px;
-}
-
 .menu {
   display: inline-block;
   vertical-align: top;
@@ -146,6 +135,34 @@ a:hover:before {
   .autenticacao {
     display: none;
   }
+}
+
+.cabecalho {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu li {
+  margin: 0px 10px;
 }
 
 /* /////////////////////////////INMAGE///////////////////////////////////*/
