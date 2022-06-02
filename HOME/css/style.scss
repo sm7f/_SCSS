@@ -9,7 +9,7 @@ body {
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: fex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -211,6 +211,8 @@ a:hover:before {
   font-size: 13px;
   cursor: pointer;
   border-radius: 20px;
+  border: #000000;
+  align-items: 2px;
 }
 
 /* /////////////////////////////Footer///////////////////////////////////*/
